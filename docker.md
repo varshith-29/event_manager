@@ -33,30 +33,30 @@ This guide will walk you through the process of using Docker Compose to manage a
 
 ### Running Database Migrations
 - Execute database migrations within the FastAPI container:
-  - **`docker-compose exec fastapi alembic upgrade head`**
+  - **`docker compose exec fastapi alembic upgrade head`**
   - This command runs the Alembic upgrade command to apply migrations to your PostgreSQL database.
 
 ### Running Tests with Pytest
 - To run tests inside the FastAPI container, ensuring they interact with the PostgreSQL service:
-  - **`docker-compose exec fastapi pytest`**
+  - **`docker compose exec fastapi pytest`**
   - This command runs all tests defined in your FastAPI application.
 
 ### Specific Test Execution
 - To run a specific test file:
-  - **`docker-compose exec fastapi pytest /myapp/tests/test_specific_file.py`**
+  - **`docker compose exec fastapi pytest /myapp/tests/test_specific_file.py`**
 
 ### Running Tests with Coverage
 - For executing tests with coverage reports:
-  - **`docker-compose exec fastapi pytest --cov=myapp`**
+  - **`docker compose exec fastapi pytest --cov=myapp`**
   - To generate an HTML coverage report:
-    - **`docker-compose exec fastapi pytest --cov=myapp --cov-report=html`**
+    - **`docker compose exec fastapi pytest --cov=myapp --cov-report=html`**
 
 ## Resetting the Testing Environment
 - If you need to reset your environment, e.g., to clear test data:
   - **Stop all services and remove volumes**:
-    - **`docker-compose down -v`**
+    - **`docker compose down -v`**
   - **Restart the services**:
-    - **`docker-compose up -d`**
+    - **`docker compose up -d`**
 
 ## Docker Basics
 
