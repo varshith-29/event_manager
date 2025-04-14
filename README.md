@@ -72,6 +72,22 @@
 
 ---
 
+### 5. Docker Scan Failed
+
+- **Description:**  
+  The docker image scan is failing because of vulnerabilities found in packages
+
+- **Fix Method:**  
+  Updated `fastapi`, `starlette`, `PyMySQL`, `uvicorn`, `python-jose`, `pyasn1` and `python-multipart` packages.
+
+- **Files Changed:**  
+  - `requirements.txt`
+
+- **Issue URL:** [#12](https://github.com/varshith-29/event_manager/issues/12)  
+- **Pull Request:** [#16](https://github.com/varshith-29/event_manager/pull/16)
+
+---
+
 ## DockerHub Project Image
 
 ![DockerHub Project Image](image.png)
