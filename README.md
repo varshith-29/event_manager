@@ -48,3 +48,7 @@
 
 
 ## What I have learned
+
+Working on this project has helped me understand the importance of maintaining consistency across data schemas, especially when dealing with user information like nicknames. I realized how small inconsistencies in schema definitions or test data can lead to failing tests and unreliable behavior, and I learned how to approach and fix these systematically.
+
+I also gained hands-on experience with enforcing secure coding practices, like adding password validation to improve security during user registration. Additionally, linking pull requests to issues helped me understand how to track work effectively and maintain a clean development workflow using GitHub.
