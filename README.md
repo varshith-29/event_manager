@@ -74,6 +74,8 @@
 
 ## DockerHub Project Image
 
+![DockerHub Project Image](image.png)
+
 ---
 
 ## What I Have Learned
